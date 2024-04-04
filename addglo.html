@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hotel</title>
-    <link rel="css/stylesheet" href="style_addfood.css">
+    <link rel="stylesheet" href="style_addglo.css">
 </head>
 <body>
     <div class="navbar">
@@ -17,27 +17,44 @@
             <h1>Milk</h1>
             <h3>Quantity : 10 litres</h3>
             <h3>Validity until : 2/4/24</h3>
-            <h3>Shop locate at : namakkal srikrishna hotel</h3>
-            <p>We have pleanty of extra fresh milk with us. People who are willing to buy it should contact us ASPA. This will be agreat deal for those who are tryig to make huge quantity of curd or other milk based products </p>
-            <button id="del-btn" onclick="alert('Ordered successfully')" type="reset" style="font-size: medium; ">Order</button>
+            <h3>Shop locate at : namakkal srikrishna hotel</h3><br>
+            <h3>Details:</h3>
+            <p> We have pleanty of extra fresh milk with us. People who are willing to buy it should contact us ASPA. This will be agreat deal for those who are tryig to make huge quantity of curd or other milk based products </p>
+            <button id="order" type="submit" style="font-size: medium; ">Order</button>
         </div>
     </div>
     <div class="popup-overlay"></div>
     <div class="popup-box">
         <h1 style="margin-bottom: 15px; margin-left:6px">Personal Information</h1>
-        <form id="form1">
-            <input type="text" placeholder="Name" id="food-name">
-            <input type="text" placeholder="Phone Number" id="food-quantity">
-            <input type="text" placeholder="Address" id="food-cook">
+        <form id="form">
+            <input type="text" placeholder="Product name" id="food-name">
+            <input type="text" placeholder="Quantity of product" id="food-quantity">
+            <input type="text" placeholder="Offer validity" id="food-cook">
        
-            <input type="text" placeholder="Type of use: For Self/Voluenteering" id="food-loc">
+            <input type="text" placeholder="Location of shop" id="food-loc">
             <textarea rows="5" placeholder="Short description" id="food-description"></textarea>
-            <button id="add-food" type="reset" onclick="clr()">Add</button>
+            <button id="add-food" type="submit" onclick="clr()" >Add</button>
             <button id="cancel-popup">Cancel</button>
+            <button id="cancel-popup" type="reset">Clear</button>
         </form>
     </div>
+    <div class="popup-overlay1"></div>
+    <div class="popup-box1">
+        <h1 style="margin-bottom: 15px; margin-left:6px">Order details</h1>
+        <form id="form">
+            <input type="text" placeholder="Name" id="food-name1">
+            <input type="text" placeholder="Phone Number" id="food-quantity1">
+            <input type="text" placeholder="Address" id="food-cook1">
+       
+            <input type="text" placeholder="Type of use: For Self/Voluenteering" id="food-loc">
+            <!textarea rows="5" placeholder="Short description" id="food-description1"><!/textarea>
+            <button id="cancel-popup1" onclick="myalert()">Submit</button>
+            <button id="cancel-popup1">Cancel</button>
+        </form>
+    </div>
+    
 
     <button class="add-button" id="add-popup-button">+</button>
-    <script src="js/script_addfood.js"></script>
+    <script src="script_addglo.js"></script>
 </body>
 </html>
