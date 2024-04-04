@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+    <link rel="stylesheet" href="style_addfood.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>
+            Available Foods
+        </h1>
+    </div>
+    <div class="container">
+        <div class="book-container" >
+            <h1>Poori</h1>
+            <h3>Quantity : 2 person</h3>
+            <h3>Food cooked on : 2/4/24</h3>
+            <h3>Food available at : namakkal srikrishna hotel</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quod ratione unde deleniti, repellat quo perspiciatis numquam doloribus voluptatibus id laboriosam, beatae nam veniam neque, accusamus qui praesentium libero cum?</p>
+            <button id="del-btn" type="reset" onclick="del(event)" style="font-size: medium; ">Order</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h1 style="margin-bottom: 15px; margin-left:6px">Add food</h1>
+        <form id="form1">
+            <input type="text" placeholder="Food Name" id="food-name">
+            <input type="text" placeholder="Quantity of food " id="food-quantity">
+            <input type="text" placeholder="When food cooked" id="food-cook">
+       
+            <input type="text" placeholder="Location of available food" id="food-loc">
+            <textarea rows="5" placeholder="Short description" id="food-description"></textarea>
+            <button id="add-food" type="reset" onclick="clr()">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script_addfood.js"></script>
+</body>
+</html>
