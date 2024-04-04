@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel</title>
+    <link rel="stylesheet" href="style_addfood.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>
+            Available Glossaries
+        </h1>
+    </div>
+    <div class="container">
+        <div class="book-container" >
+            <h1>Milk</h1>
+            <h3>Quantity : 10 litres</h3>
+            <h3>Validity until : 2/4/24</h3>
+            <h3>Shop locate at : namakkal srikrishna hotel</h3>
+            <p>We have pleanty of extra fresh milk with us. People who are willing to buy it should contact us ASPA. This will be agreat deal for those who are tryig to make huge quantity of curd or other milk based products </p>
+            <button id="del-btn" onclick="alert('Ordered successfully')" type="reset" style="font-size: medium; ">Order</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h1 style="margin-bottom: 15px; margin-left:6px">Personal Information</h1>
+        <form id="form1">
+            <input type="text" placeholder="Name" id="food-name">
+            <input type="text" placeholder="Phone Number" id="food-quantity">
+            <input type="text" placeholder="Address" id="food-cook">
+       
+            <input type="text" placeholder="Type of use: For Self/Voluenteering" id="food-loc">
+            <textarea rows="5" placeholder="Short description" id="food-description"></textarea>
+            <button id="add-food" type="reset" onclick="clr()">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script_addfood.js"></script>
+</body>
+</html>
